@@ -1,0 +1,117 @@
+section {
+  width: 250px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+section div {
+  width: 48px;
+  height: 48px;
+  border: 1px solid green;
+  float: left;
+}
+
+#day2 .carrot,
+#day2 .potato,
+#day2 .corn, #day4 .carrot,
+#day4 .potato,
+#day4 .corn, #day6 .carrot,
+#day6 .potato,
+#day6 .corn {
+  position: relative;
+  left: 50px;
+}
+
+section .sun {
+  background-image: url("images/sun-icon.png");
+  background-size: 100% 50px;
+}
+
+section .rain {
+  background-image: url("images/ploi.jpg");
+  background-size: 100% 50px;
+}
+
+section .corn {
+  background-image: url("images/porumb.jpg");
+  background-size: 100% 50px;
+}
+
+section .potato {
+  background-image: url("images/cartof.jpg");
+  background-size: 100% 50px;
+}
+
+section .carrot {
+  background-image: url("images/morcov.jpg");
+  background-size: 100% 50px;
+}
+
+.rain {
+  position: relative;
+  margin-left: 50px;
+}
+
+.corn,
+.potato,
+.carrot {
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+
+section:nth-of-type(1) .corn,
+section:nth-of-type(1) .potato,
+section:nth-of-type(1) .carrot {
+  margin-top: 50px;
+  -webkit-transform: scale(0.49);
+          transform: scale(0.49);
+}
+
+section:nth-of-type(2) .corn,
+section:nth-of-type(2) .potato,
+section:nth-of-type(2) .carrot {
+  margin-top: 50px;
+  -webkit-transform: scale(0.58);
+          transform: scale(0.58);
+}
+
+section:nth-of-type(3) .corn,
+section:nth-of-type(3) .potato,
+section:nth-of-type(3) .carrot {
+  margin-top: 50px;
+  -webkit-transform: scale(0.67);
+          transform: scale(0.67);
+}
+
+section:nth-of-type(4) .corn,
+section:nth-of-type(4) .potato,
+section:nth-of-type(4) .carrot {
+  margin-top: 50px;
+  -webkit-transform: scale(0.76);
+          transform: scale(0.76);
+}
+
+section:nth-of-type(5) .corn,
+section:nth-of-type(5) .potato,
+section:nth-of-type(5) .carrot {
+  margin-top: 50px;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+section:nth-of-type(6) .corn,
+section:nth-of-type(6) .potato,
+section:nth-of-type(6) .carrot {
+  margin-top: 50px;
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+}
+
+section:nth-of-type(7) .corn,
+section:nth-of-type(7) .potato,
+section:nth-of-type(7) .carrot {
+  margin-top: 50px;
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+/*# sourceMappingURL=style.css.map */

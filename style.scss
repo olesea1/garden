@@ -1,0 +1,62 @@
+$size: 50px;
+$dark: black;
+$light: green;
+section {
+  width: 5 * $size;
+  height: 2 * $size;
+  border: 0.02 * $size solid $dark;
+  div {
+    width: $size - 0.04 * $size;
+    height: $size - 0.04 * $size;
+    border: 0.02 * $size solid $light;
+    float: left;   
+  }
+}
+#day2, #day4, #day6 {
+  .carrot,
+  .potato,
+  .corn {
+   position: relative;
+   left: $size;
+  } 
+}
+section .sun {
+  background-image: url("images/sun-icon.png");
+  background-size: 100%$size;
+}
+section .rain {
+  background-image: url("images/ploi.jpg");
+  background-size: 100%$size;
+}
+section .corn {
+  background-image: url("images/porumb.jpg"); 
+  background-size: 100%$size;   
+}
+section .potato {
+  background-image: url("images/cartof.jpg");
+  background-size: 100%$size; 
+}
+section .carrot {
+  background-image: url("images/morcov.jpg");
+  background-size: 100%$size; 
+}
+.rain {
+  position: relative;
+  margin-left: $size;
+}
+.corn,
+.potato,
+.carrot{
+  transform: scale(0.4);
+}
+@for $n from 1 through 7 {
+  section:nth-of-type(#{$n}){
+    .corn,
+    .potato,
+    .carrot  {
+      margin-top: $size;
+     transform: scale(0.4 + $n *0.09);    
+    }
+  }
+}
+
